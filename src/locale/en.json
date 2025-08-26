@@ -1,0 +1,39 @@
+{
+  "app": {
+    "title": "Q&A Live",
+    "welcome": "Welcome to our application",
+    "description": "This is a React application with TypeScript and i18n support",
+    "language": "Language",
+    "english": "English",
+    "chinese": "Chinese",
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "searchPlaceholder": "Search questions...",
+    "logout": "Logout",
+    "speakerLogin": "Speaker Login"
+  },
+  "home": {
+    "title": "Home Page",
+    "greeting": "Hello, welcome to our website!",
+    "content": "This is the main content of our application.",
+    "noQuestionsFiltered": "No questions found matching your filters.",
+    "noQuestions": "No questions yet. Be the first to ask!"
+  },
+  "about": {
+    "title": "About Us",
+    "content": "We are a team dedicated to creating amazing web applications."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send"
+  },
+  "filter": {
+    "questions": "Questions",
+    "allQuestions": "All Questions",
+    "answered": "Answered",
+    "unanswered": "Unanswered"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "app": {
+    "title": "问答直播",
+    "welcome": "欢迎使用我们的应用",
+    "description": "这是一个带有 TypeScript 和 i18n 支持的 React 应用",
+    "language": "语言",
+    "english": "英文",
+    "chinese": "中文",
+    "home": "首页",
+    "about": "关于",
+    "contact": "联系我们",
+    "searchPlaceholder": "搜索问题...",
+    "logout": "退出登录",
+    "speakerLogin": "讲师登录"
+  },
+  "home": {
+    "title": "首页",
+    "greeting": "你好，欢迎访问我们的网站！",
+    "content": "这是我们应用的主要内容。",
+    "noQuestionsFiltered": "没有找到符合筛选条件的问题。",
+    "noQuestions": "还没有问题。成为第一个提问的人！"
+  },
+  "about": {
+    "title": "关于我们",
+    "content": "我们是一个致力于创建优秀网络应用的团队。"
+  },
+  "contact": {
+    "title": "联系我们",
+    "email": "电子邮件",
+    "message": "留言",
+    "send": "发送"
+  },
+  "filter": {
+    "questions": "问题",
+    "allQuestions": "所有问题",
+    "answered": "已回答",
+    "unanswered": "未回答"
+  }
+}

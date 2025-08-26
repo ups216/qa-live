@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from 'react';
+import { useTranslation } from 'react-i18next';
 import Header from '../components/Header';
 import StatisticsCards from '../components/StatisticsCards';
 import QuestionCard from '../components/QuestionCard';
@@ -15,6 +16,7 @@ const Home: React.FC = () => {
   const [statusFilter, setStatusFilter] = useState<'all' | 'answered' | 'unanswered'>('all');
   const [showQuestionModal, setShowQuestionModal] = useState(false);
   const { speaker } = useAuth();
+  const { t } = useTranslation();
 
   const filteredAndSortedQuestions = useMemo(() => {
     let filtered = questions;
@@ -98,8 +100,8 @@ const Home: React.FC = () => {
             <div className="text-center py-12">
               <p className="text-gray-500 text-lg">
                 {searchTerm || statusFilter !== 'all' 
-                  ? 'No questions found matching your filters.' 
-                  : 'No questions yet. Be the first to ask!'
+                  ? t('home.noQuestionsFiltered') 
+                  : t('home.noQuestions')
                 }
               </p>
             </div>

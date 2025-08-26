@@ -1,5 +1,6 @@
 import React from 'react';
 import { Filter } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 interface QuestionFilterProps {
   currentFilter: 'all' | 'answered' | 'unanswered';
@@ -16,15 +17,16 @@ const QuestionFilter: React.FC<QuestionFilterProps> = ({
   onFilterChange, 
   questionCounts 
 }) => {
+  const { t } = useTranslation();
   const filterOptions = [
-    { value: 'all' as const, label: 'All Questions', count: questionCounts.total },
-    { value: 'answered' as const, label: 'Answered', count: questionCounts.answered },
-    { value: 'unanswered' as const, label: 'Unanswered', count: questionCounts.unanswered },
+    { value: 'all' as const, label: t('filter.allQuestions'), count: questionCounts.total },
+    { value: 'answered' as const, label: t('filter.answered'), count: questionCounts.answered },
+    { value: 'unanswered' as const, label: t('filter.unanswered'), count: questionCounts.unanswered },
   ];
 
   return (
     <div className="flex items-center justify-between mb-6">
-      <h2 className="text-xl font-semibold text-gray-900">Questions</h2>
+      <h2 className="text-xl font-semibold text-gray-900">{t('filter.questions')}</h2>
       
       <div className="flex items-center space-x-2">
         <Filter className="h-5 w-5 text-gray-400" />
