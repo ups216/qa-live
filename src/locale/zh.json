@@ -35,5 +35,8 @@
     "allQuestions": "所有问题",
     "answered": "已回答",
     "unanswered": "未回答"
-  }
+  },
+  "showQRCode": "显示二维码",
+  "hideQRCode": "隐藏二维码",
+  "scanToOpen": "扫描二维码在您的设备上打开此页面"
 }

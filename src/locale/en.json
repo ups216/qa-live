@@ -35,5 +35,8 @@
     "allQuestions": "All Questions",
     "answered": "Answered",
     "unanswered": "Unanswered"
-  }
+  },
+  "showQRCode": "Show QR Code",
+  "hideQRCode": "Hide QR Code",
+  "scanToOpen": "Scan to open this page on your device"
 }

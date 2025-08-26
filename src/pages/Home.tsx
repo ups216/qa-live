@@ -6,6 +6,7 @@ import QuestionCard from '../components/QuestionCard';
 import QuestionFilter from '../components/QuestionFilter';
 import QuestionModal from '../components/QuestionModal';
 import FloatingSubmitButton from '../components/FloatingSubmitButton';
+import QRCodeDisplay from '../components/QRCodeDisplay';
 import { Question } from '../types';
 import { sampleQuestions } from '../data/Questions';
 import { useAuth } from '../hooks/useAuth';
@@ -85,6 +86,9 @@ const Home: React.FC = () => {
         searchTerm={searchTerm} 
         onSearchChange={setSearchTerm} 
       />
+      
+      {/* QR Code Display */}
+      <QRCodeDisplay />
       
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <StatisticsCards questions={questions} />
